@@ -1,7 +1,8 @@
 .form {
     display: flex;
+    flex-direction: column;
+
     // TODO включить?
-    //flex-direction: column;
 
     &_border_all {
         border: 3px solid var(--color-border);
@@ -13,6 +14,7 @@
 
     &__item {
         display: flex;
+        flex-direction: column;
 
         &_border_bottom:not(:last-child) {
             border-bottom: 3px solid var(--color-border);
@@ -128,6 +130,12 @@
                 padding-bottom: var(--space-xxxxl);
             }
         }
+    }
+
+    &__label {
+        display: flex;
+        flex: 1;
+        align-items: center;
     }
 
     // TODO check
