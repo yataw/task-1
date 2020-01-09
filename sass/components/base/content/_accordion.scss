@@ -1,0 +1,10 @@
+.accordion {
+    &__fixed {
+
+    }
+    &__dynamic {
+        &_closed {
+            display: none;
+        }
+    }
+}

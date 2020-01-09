@@ -1,0 +1,86 @@
+.text {
+    display: flex;
+    // TODO check
+    //flex-flow: row wrap;
+
+    &_align_center {
+        justify-content: center;
+    }
+    &_size {
+        &_s {
+            --word-width-s: 20px;
+            --word-width-m: 48px;
+            --word-width-l: 100px;
+            --word-height: 8px;
+        }
+        &_m {
+            --word-width-s: 24px;
+            --word-width-m: 56px;
+            --word-width-l: 114px;
+            --word-height: 10px;
+        }
+        &_l {
+            --word-width-s: 28px;
+            --word-width-m: 68px;
+            --word-width-l: 138px;
+            --word-height: 11px;
+        }
+        &_xl {
+            --word-width-s: 32px;
+            --word-width-m: 74px;
+            --word-width-l: 154px;
+            --word-height: 13px;
+        }
+        &_xxl {
+            --word-width-s: 36px;
+            --word-width-m: 88px;
+            --word-width-l: 184px;
+            --word-height: 16px;
+        }
+    }
+    &_type {
+        &_h1 {
+            margin: 18px 0 24px;
+        }
+        &_h2 {
+            margin: 45px 0 21px;
+        }
+        &_h3 {
+            margin: 42px 0 0;
+        }
+        &_p {
+            margin: 15px 0 21px;
+        }
+    }
+    &_view {
+        &_primary {
+            --color: var(--text-primary);
+        }
+        &_secondary {
+            --color: var(--text-secondary);
+        }
+        &_ghost {
+            --color: var(--text-extra);
+        }
+        &_link {
+            --color: var(--text-link);
+        }
+    }
+
+    &__word {
+        background-color: var(--color);
+        height: var(--word-height);
+
+        &_width {
+            &_s {
+                width: var(--word-width-s);
+            }
+            &_m {
+                width: var(--word-width-m);
+            }
+            &_l {
+                width: var(--word-width-l);
+            }
+        }
+    }
+}

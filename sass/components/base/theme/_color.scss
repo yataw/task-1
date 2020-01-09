@@ -1,0 +1,53 @@
+/* TODO --image-url корректы?*/
+
+.theme_color {
+    &_project-default {
+        --color-default: #FFFFFF;
+        --color-accent: #ffcc00;
+        --color-border: #000000;
+
+        --text-primary: #000000;
+        --text-secondary: rgba(0, 0, 0, 0.6);
+        --text-extra: rgba(0, 0, 0, 0.3);
+        --text-link: #0077ff;
+
+        --image-url: url(../../../../assets/images/image-placeholder-primary.svg);
+    }
+
+    &_project-brand {
+        --color-default: #0070f0;
+        --color-accent: #FFFFFF;
+        --color-border: #FFFFFF;
+
+        --text-primary: #FFFFFF;
+        --text-secondary: rgba(255, 255, 255, 0.6);
+        --text-extra: rgba(255, 255, 255, 0.3);
+        --text-link: #FFFFFF;
+
+        --image-url: url(../../../../assets/images/image-placeholder-inverse.svg);
+    }
+
+    &_project-inverse {
+        --color-default: #000000;
+        --color-accent: #FFFFFF;
+        --color-border: #FFFFFF;
+
+        --text-primary: #FFFFFF;
+        --text-secondary: rgba(255, 255, 255, 0.6);
+        --text-extra: rgba(255, 255, 255, 0.3);
+        --text-link: #0077ff;
+
+        --image-url: url(../../../../assets/images/image-placeholder-inverse.svg);
+    }
+
+    &_project-warning {
+        --color-default: #FF9900;
+        --color-accent: #FFFFFF;
+        --color-border: #FFFFFF;
+
+        --text-primary: #FFFFFF;
+        --text-secondary: rgba(255, 255, 255, 0.6);
+        --text-extra: rgba(255, 255, 255, 0.3);
+        --text-link: #FFF;
+    }
+}

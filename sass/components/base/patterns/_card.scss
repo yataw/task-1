@@ -1,0 +1,90 @@
+.card {
+    position: relative;
+
+    &_border-all {
+        border-color: var(--color-border);
+    }
+    &_view-default {
+        background-color: var(--color-default);
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+
+        &_distribute_center {
+            justify-content: center;
+        }
+
+        &_vertical-align_center {
+            align-items: center;
+        }
+
+        &_space-a {
+            &_m {
+                padding: var(--space-m);
+            }
+            &_l {
+                padding: var(--space-l);
+            }
+            &_xl {
+                padding: var(--space-xl);
+            }
+            &_xxl {
+                padding: var(--space-xxl);
+            }
+            &_xxxl {
+                padding: var(--space-xxxl);
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+
+        &_distribute {
+            &_center {
+                justify-content: center;
+            }
+            &_between {
+                justify-content: space-between;
+            }
+            &_right {
+                justify-content: right;
+            }
+        }
+
+        &_vertical-align {
+            &_center {
+                align-items: center;
+            }
+            &_top {
+                align-items: flex-start;
+            }
+            &_bottom {
+                align-items: flex-end;
+            }
+        }
+
+        &_space-a {
+            &_m {
+                padding: var(--space-m);
+            }
+            &_l {
+                padding: var(--space-l);
+            }
+            &_xl {
+                padding: var(--space-xl);
+            }
+            &_xxl {
+                padding: var(--space-xxl);
+            }
+            &_xxxl {
+                padding: var(--space-xxxl);
+            }
+        }
+    }
+
+}

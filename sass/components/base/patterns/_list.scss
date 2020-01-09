@@ -1,0 +1,59 @@
+.list {
+    display: flex;
+
+    // TODO check
+    flex-direction: column;
+
+    &_border_all {
+        // TODO в readme не указана толщина обводки
+        border: 3px solid var(--color-border);
+    }
+    &_view_default {
+        background-color: var(--color-default);
+    }
+
+    &__item {
+        display: flex;
+
+        &_border {
+            &_bottom {
+                // TODO в readme не указана толщина обводки
+                border-bottom: 3px solid var(--color-border);
+            }
+            &_top {
+                // TODO в readme не указана толщина обводки
+                border-top: 3px solid var(--color-border);
+            }
+        }
+
+        &_distribute_between {
+            justify-content: space-between;
+        }
+        &_vertical-align_center {
+            align-items: center;
+        }
+        &_indent-t_m {
+            margin-top: var(--space-m);
+        }
+        &_indent-b {
+            &_s {
+                margin-bottom: var(--space-s);
+            }
+            &_m {
+                margin-bottom: var(--space-m);
+            }
+            &_l {
+                margin-bottom: var(--space-l);
+            }
+            &_xl {
+                margin-bottom: var(--space-xl);
+            }
+        }
+        &_space-b_s {
+            padding-bottom: var(--space-s);
+        }
+        &_space-a_m {
+            padding: var(--space-m);
+        }
+    }
+}

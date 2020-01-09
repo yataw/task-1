@@ -1,0 +1,23 @@
+.input {
+    border: 3px solid var(--color-border);
+    width: 100%;
+    // TODO check
+    //flex-basis: 65%;
+    &_size {
+        &_s {
+            height: 24px;
+        }
+        &_m {
+            height: 32px;
+        }
+        &_l {
+            height: 42px;
+        }
+        &_xl {
+            height: 56px;
+        }
+        &_xxl {
+            height: 64px;
+        }
+    }
+}

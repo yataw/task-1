@@ -1,0 +1,20 @@
+
+// RESPONSIVE BREAKPOINTS
+$bp-large: 1200px;
+$bp-medium: 1024px; // screen-m
+$bp-small: 600px;
+
+$container-size-s: 920px;
+$container-size-m: 1280px;
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+}
+
+body {
+}
