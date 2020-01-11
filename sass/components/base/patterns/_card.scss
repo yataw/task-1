@@ -1,10 +1,10 @@
 .card {
     position: relative;
 
-    &_border-all {
+    &_border_all {
         border-color: var(--color-border);
     }
-    &_view-default {
+    &_view_default {
         background-color: var(--color-default);
     }
 
