@@ -1,10 +1,16 @@
 .accordion {
-    &__fixed {
-
+    &__short {
+        /** short */
     }
-    &__dynamic {
-        &_closed {
-            display: none;
+    &__more {
+        /** more */
+        &_view {
+            &_default {
+                /** default */
+            }
+            &_closed {
+                display: none;
+            }
         }
     }
 }

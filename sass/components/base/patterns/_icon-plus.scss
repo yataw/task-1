@@ -1,11 +1,14 @@
 .icon-plus {
     display: flex;
 
-    &_vertical_align {
-        align-items: center;
+    &_vertical-align {
+        &_center {
+            align-items: center;
+        }
     }
 
     &__icon {
+        /** icon */
         &_indent-r {
             &_s {
                 margin-right: var(--space-s);
@@ -19,5 +22,7 @@
         }
     }
 
-    &__block {}
+    &__block {
+        /** block */
+    }
 }

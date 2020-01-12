@@ -1,7 +1,5 @@
 .list {
     display: flex;
-
-    // TODO check
     flex-direction: column;
 
     &_border_all {
@@ -14,6 +12,7 @@
 
     &__item {
         display: flex;
+        flex-grow: 1;
 
         &_border {
             &_bottom {
