@@ -1,0 +1,24 @@
+
+/**
+минимальная высота — 472px,
+отступ между изображением и текстом — l,
+высота изображения — 180px,
+высота кнопки — l.
+ */
+.cover {
+    min-height: 472px;
+
+    @extend .card, .card_view_default, .theme_color_project-brand;
+
+    &__info {
+        @extend .card__content_space-a_xxl;
+    }
+    &__preview {
+        height: 180px;
+        margin-bottom: var(--space-l);
+
+    }
+    &__footer {
+        @extend .card__footer, .card__content_space-a_xxl;
+    }
+}
