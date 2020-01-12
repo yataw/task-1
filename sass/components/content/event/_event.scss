@@ -1,0 +1,34 @@
+
+/**
+величина отступа между логотипами и первой строкой равна значению xxl,
+величина отступа между заголовком и текстом — s,
+величина отступа между логотипами — xs.
+ */
+
+.event {
+    @extend .card_view_default, .theme_color_project-inverse;
+
+    min-height: 400px;
+
+    &__content {
+        @extend .card__content_vertical-align_center, .card__content_distribute_center, .card__content_space-a_xxxl;
+    }
+    &__footer {
+        @extend .card__footer_vertical-align_center, .card__footer_distribute_center, .card__footer_space-a_xxl;
+    }
+
+    &__preview {
+        display: flex;
+        justify-content: center;
+    }
+    &__speaker {
+        margin-right: var(--space-xs);
+        margin-bottom: var(--space-xxl);
+    }
+    &__title {
+
+    }
+    &__description {
+
+    }
+}
