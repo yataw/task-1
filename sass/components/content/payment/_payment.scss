@@ -1,15 +1,20 @@
 .payment {
-    @extend .form, .form_border_all;
+    @extend .form,  .form_border_all, .form_view_default;;
 
     &__header {
         @extend .form__item, .form__item_space-v_l, .form__item_space-h_xl, .form__item_border_bottom;
     }
 
     &__content {
+        flex-direction: column;
         @extend .form__item, .form__item_space-v_l, .form__item_space-h_xl, .form__item_border_bottom;
     }
 
     &__footer {
-        @extend .form__item, .form__item_border_bottom, .form__item_distribute_between, .form__item_space-v_l, .form__item_space-h_xl;
+        @extend .form__item, .form__item_distribute_between, .form__item_vertical-align_center, .form__item_space-v_l, .form__item_space-h_xl;
+
+        .button {
+            margin-left: auto;
+        }
     }
 }

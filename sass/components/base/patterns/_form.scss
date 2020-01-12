@@ -14,7 +14,7 @@
 
     &__item {
         display: flex;
-        flex-direction: column;
+        flex-grow: 1;
 
         &_border_bottom:not(:last-child) {
             border-bottom: 3px solid var(--color-border);
@@ -133,13 +133,16 @@
     }
 
     &__label {
-        display: flex;
-        flex: 1;
-        align-items: center;
+        &_width_default {
+            flex: 0 0 35%;
+
+            & ~ .form__control {
+                flex: 0 0 65%;
+            }
+        }
     }
 
-    // TODO check
-    &__label_width_default>:not(&__control) {
-        width: 35%; // use flex property
+    &__control {
+        /* control */
     }
 }
