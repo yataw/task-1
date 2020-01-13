@@ -2,19 +2,23 @@
 .product {
     min-height: 300px;
     border: 3px solid var(--color-border);
-    position: relative;
 
-    @extend .card_view_default, .card_border_all;
+    @extend .card, .card_view_default, .card_border_all;
 
     &__content {
         @extend .card__content, .card__content_space-a_m;
     }
     &__footer {
+        flex-direction: column;
         @extend .card__footer, .card__footer_space-a_m;
     }
     &__image {
-        height: 160px;
+        width: 100%;
         // TODO theme_color_project-inverse или theme_color_project-default
         @extend .theme_color_project-inverse;
+
+        .image {
+            height: 160px;
+        }
     }
 }
