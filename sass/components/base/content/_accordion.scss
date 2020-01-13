@@ -1,15 +1,15 @@
-.accordion {
+.e-accordion {
+    /** accordion */
+
     &__short {
         /** short */
     }
     &__more {
+        display: none;
         /** more */
         &_view {
-            &_default {
-                /** default */
-            }
-            &_closed {
-                display: none;
+            &_opened {
+                display: unset;
             }
         }
     }

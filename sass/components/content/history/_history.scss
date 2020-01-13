@@ -5,13 +5,13 @@
     @extend .list, .list_view_default, .list_border_all;
 
     &__transaction {
-        @extend .list, .list__item, .list__item_border_bottom, .list__item_space-a_m;
+        @extend .e-accordion, .list, .list__item, .list__item_border_bottom, .list__item_space-a_m;
     }
     &__show {
-        @extend .list__item, .list__item_indent-t_m, .accordion__short, .list__item_vertical-align_center;
+        @extend .list__item, .list__item_indent-t_m, .e-accordion__short, .list__item_vertical-align_center;
     }
     &__hide {
-        @extend .list, .list__item, .list__item_indent-t_m, .accordion__more, .accordion__more_view_closed;
+        @extend .list__item, .list__item_indent-t_m, .e-accordion__more;
     }
     &__destination {
         flex: 1;
@@ -25,11 +25,10 @@
         @extend .icon-plus__block;
     }
     &__description {
-        @extend .list__item_indent-b_m;
+        flex-direction: column;
+        @extend .list__item, .list__item_indent-b_m;
     }
     &__actions {
-        //flex: 1;
-
         @extend .list__item, .list__item_distribute_between, .list__item_indent-b_l;
     }
 
@@ -43,6 +42,8 @@
         justify-content: flex-end;
     }
     &__quantity {
-        //margin-left: auto;
+    }
+    &__info {
+        flex: 1;
     }
 }
