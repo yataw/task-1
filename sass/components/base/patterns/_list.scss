@@ -16,8 +16,9 @@
 
         &_border {
             &_bottom {
-                // TODO в readme не указана толщина обводки
-                border-bottom: 3px solid var(--color-border);
+                &:not(:last-child) {
+                    border-bottom: 3px solid var(--color-border);
+                }
             }
             &_top {
                 // TODO в readme не указана толщина обводки

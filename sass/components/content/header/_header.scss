@@ -1,6 +1,6 @@
 
 .header {
-    margin: var(--space-xxxl) var(--gap);
+    margin: var(--space-xxxl) auto;
     max-width: 1280px;
 
     &__content {
@@ -11,6 +11,10 @@
         width: 179px;
         height: 34px;
         background-color: var(--text-primary);
+    }
+
+    @media only screen and (max-width: 1280px) {
+        margin: var(--space-xxxl) var(--gap);
     }
 }
 

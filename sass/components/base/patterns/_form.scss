@@ -25,7 +25,8 @@
         &_vertical-align_center {
             align-items: center;
         }
-        &_indent-b {
+
+        &:not(:last-child).form__item_indent-b {
             &_xxxs {
                 margin-bottom: var(--space-xxxs);
             }
@@ -54,6 +55,7 @@
                 margin-bottom: var(--space-xxxxl);
             }
         }
+
         &_space-h {
             &_xxxs {
                 padding-left: var(--space-xxxs);
