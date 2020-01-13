@@ -71,7 +71,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   --text-secondary: rgba(0, 0, 0, 0.6);
   --text-extra: rgba(0, 0, 0, 0.3);
   --text-link: #0077ff;
-  --image-url: url(../../assets/images/image-placeholder-primary.svg); }
+  --image-url: url(../assets/images/image-placeholder-primary.svg); }
 
 .theme_color_project-brand, .cover {
   --color-default: #0070f0;
@@ -81,7 +81,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   --text-secondary: rgba(255, 255, 255, 0.6);
   --text-extra: rgba(255, 255, 255, 0.3);
   --text-link: #FFFFFF;
-  --image-url: url(../../assets/images/image-placeholder-inverse.svg); }
+  --image-url: url(../assets/images/image-placeholder-inverse.svg); }
 
 .theme_color_project-inverse, .product__image, .event {
   --color-default: #000000;
@@ -91,7 +91,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   --text-secondary: rgba(255, 255, 255, 0.6);
   --text-extra: rgba(255, 255, 255, 0.3);
   --text-link: #0077ff;
-  --image-url: url(../../assets/images/image-placeholder-inverse.svg); }
+  --image-url: url(../assets/images/image-placeholder-inverse.svg); }
 
 .theme_color_project-warning, .warning {
   --color-default: #ff3333;
@@ -653,14 +653,14 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   height: 32px;
   position: relative;
   border: 2px solid var(--color-border); }
+  .onoffswitch_checked .onoffswitch__button {
+    right: 0; }
   .onoffswitch__button {
     position: absolute;
     margin: 2px;
     width: 24px;
     height: 24px;
     background-color: var(--color-border); }
-    .onoffswitch__button_state_on {
-      right: 0; }
 
 .footer {
   max-width: 1280px;

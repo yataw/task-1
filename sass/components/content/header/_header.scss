@@ -24,6 +24,10 @@
     position: relative;
     border: 2px solid var(--color-border);
 
+    &_checked &__button {
+        right: 0;
+    }
+
     &__button {
         position: absolute;
 
@@ -31,11 +35,5 @@
         width: 24px;
         height: 24px;
         background-color: var(--color-border);
-
-        &_state {
-            &_on {
-                right: 0;
-            }
-        }
     }
 }
