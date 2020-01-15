@@ -12,8 +12,8 @@
             --word-width-m: 48px;
             --word-width-l: 100px;
             --word-height: 8px;
-            --word-margin-top: calc((var(--line-height-s) - var(--font-size-s))*0.45);
-            --word-margin-bottom: calc((var(--line-height-s) - var(--font-size-s))*0.55);
+            --word-margin-top: calc((var(--line-height-s) - var(--font-size-s))*0.6);
+            --word-margin-bottom: calc((var(--line-height-s) - var(--font-size-s))*0.4);
         }
         &_m {
             --word-width-s: 24px;
