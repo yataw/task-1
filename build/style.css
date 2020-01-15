@@ -7,16 +7,6 @@
 html {
   box-sizing: border-box; }
 
-.dev_ {
-  position: absolute;
-  background-image: url("../event.png");
-  background-repeat: no-repeat;
-  z-index: -1;
-  width: 100%;
-  height: 50%;
-  opacity: .5;
-  bottom: 0; }
-
 /**
 0 - 600px:        Phone
 600 - 900px:      Tablet portrait
@@ -62,16 +52,15 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
 .theme {
   /* theme */ }
 
-/* TODO --image-url корректы?*/
 .theme_color_project-default {
   --color-default: #FFFFFF;
-  --color-accent: #ffcc00;
-  --color-border: #000000;
-  --text-primary: #000000;
-  --text-secondary: rgba(0, 0, 0, 0.6);
-  --text-extra: rgba(0, 0, 0, 0.3);
+  --color-accent: red;
+  --color-border: red;
+  --text-primary: red;
+  --text-secondary: red;
+  --text-extra: red;
   --text-link: #0077ff;
-  --image-url: url(../assets/images/image-placeholder-primary.svg); }
+  --image: var(--color-default) url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nODBweCcgaGVpZ2h0PSc2NHB4JyB2aWV3Qm94PScwIDAgODAgNjQnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayc+CiAgICA8ZyBpZD0nUGFnZS0xJyBzdHJva2U9J25vbmUnIHN0cm9rZS13aWR0aD0nMScgZmlsbD0nbm9uZScgZmlsbC1ydWxlPSdldmVub2RkJz4KICAgICAgICA8ZyBpZD0naW1hZ2UtcGxhY2Vob2xkZXInIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC01MDAuMDAwMDAwLCAtMzY4LjAwMDAwMCknIGZpbGw9JyMwMDAwMDAnIGZpbGwtcnVsZT0nbm9uemVybyc+CiAgICAgICAgICAgIDxnIGlkPSdHcm91cCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTAwLjAwMDAwMCwgMzY4LjAwMDAwMCknPgogICAgICAgICAgICAgICAgPGcgaWQ9J3BsYWNlaG9sZGVyJz4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSdNMzIsMTYgTDQ4LDE2IEw0OCw4IEw1Niw4IEw1NiwxNiBMNjQsMTYgTDY0LDI0IEw3MiwyNCBMNzIsMzIgTDgwLDMyIEw4MCw0OCBMNzIsNDggTDcyLDQwIEw2NCw0MCBMNjQsNDggTDU2LDQ4IEw1Niw1NiBMNDgsNTYgTDQ4LDQ4IEwzMiw0OCBMMzIsNTYgTDI0LDU2IEwyNCw0OCBMMTYsNDggTDE2LDQwIEw4LDQwIEw4LDQ4IEwwLDQ4IEwwLDMyIEw4LDMyIEw4LDI0IEwxNiwyNCBMMTYsMTYgTDI0LDE2IEwyNCw4IEwzMiw4IEwzMiwxNiBaIE0yNCwzMiBMMzIsMzIgTDMyLDI0IEwyNCwyNCBMMjQsMzIgWiBNMTYsMCBMMjQsMCBMMjQsOCBMMTYsOCBMMTYsMCBaIE0xNiw1NiBMMjQsNTYgTDI0LDY0IEwxNiw2NCBMMTYsNTYgWiBNNTYsMzIgTDU2LDI0IEw0OCwyNCBMNDgsMzIgTDU2LDMyIFogTTY0LDAgTDY0LDggTDU2LDggTDU2LDAgTDY0LDAgWiBNNjQsNTYgTDY0LDY0IEw1Niw2NCBMNTYsNTYgTDY0LDU2IFonIGlkPSdTaGFwZSc+PC9wYXRoPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=") no-repeat center; }
 
 .theme_color_project-brand, .cover {
   --color-default: #0070f0;
@@ -81,26 +70,27 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   --text-secondary: rgba(255, 255, 255, 0.6);
   --text-extra: rgba(255, 255, 255, 0.3);
   --text-link: #FFFFFF;
-  --image-url: url(../assets/images/image-placeholder-inverse.svg); }
+  --image: var(--color-default) url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nODBweCcgaGVpZ2h0PSc2NHB4JyB2aWV3Qm94PScwIDAgODAgNjQnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayc+CiAgICA8ZyBpZD0nUGFnZS0xJyBzdHJva2U9J25vbmUnIHN0cm9rZS13aWR0aD0nMScgZmlsbD0nbm9uZScgZmlsbC1ydWxlPSdldmVub2RkJz4KICAgICAgICA8ZyBpZD0naW1hZ2UtcGxhY2Vob2xkZXInIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC01MDAuMDAwMDAwLCAtMzY4LjAwMDAwMCknIGZpbGw9JyMwMDAwMDAnIGZpbGwtcnVsZT0nbm9uemVybyc+CiAgICAgICAgICAgIDxnIGlkPSdHcm91cCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTAwLjAwMDAwMCwgMzY4LjAwMDAwMCknPgogICAgICAgICAgICAgICAgPGcgaWQ9J3BsYWNlaG9sZGVyJz4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSdNMzIsMTYgTDQ4LDE2IEw0OCw4IEw1Niw4IEw1NiwxNiBMNjQsMTYgTDY0LDI0IEw3MiwyNCBMNzIsMzIgTDgwLDMyIEw4MCw0OCBMNzIsNDggTDcyLDQwIEw2NCw0MCBMNjQsNDggTDU2LDQ4IEw1Niw1NiBMNDgsNTYgTDQ4LDQ4IEwzMiw0OCBMMzIsNTYgTDI0LDU2IEwyNCw0OCBMMTYsNDggTDE2LDQwIEw4LDQwIEw4LDQ4IEwwLDQ4IEwwLDMyIEw4LDMyIEw4LDI0IEwxNiwyNCBMMTYsMTYgTDI0LDE2IEwyNCw4IEwzMiw4IEwzMiwxNiBaIE0yNCwzMiBMMzIsMzIgTDMyLDI0IEwyNCwyNCBMMjQsMzIgWiBNMTYsMCBMMjQsMCBMMjQsOCBMMTYsOCBMMTYsMCBaIE0xNiw1NiBMMjQsNTYgTDI0LDY0IEwxNiw2NCBMMTYsNTYgWiBNNTYsMzIgTDU2LDI0IEw0OCwyNCBMNDgsMzIgTDU2LDMyIFogTTY0LDAgTDY0LDggTDU2LDggTDU2LDAgTDY0LDAgWiBNNjQsNTYgTDY0LDY0IEw1Niw2NCBMNTYsNTYgTDY0LDU2IFonIGlkPSdTaGFwZSc+PC9wYXRoPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=") no-repeat center; }
 
 .theme_color_project-inverse, .product__image, .event {
-  --color-default: #000000;
-  --color-accent: #FFFFFF;
-  --color-border: #FFFFFF;
-  --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.6);
-  --text-extra: rgba(255, 255, 255, 0.3);
+  --color-default: #FFFFFF;
+  --color-accent: red;
+  --color-border: red;
+  --text-primary: red;
+  --text-secondary: red;
+  --text-extra: red;
   --text-link: #0077ff;
-  --image-url: url(../assets/images/image-placeholder-inverse.svg); }
+  --image: var(--color-default) url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgODAgNjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iaW1hZ2UtcGxhY2Vob2xkZXIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MjAuMDAwMDAwLCAtMzY4LjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAwLjAwMDAwMCwgMzY4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9InBsYWNlaG9sZGVyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zMiwxNiBMNDgsMTYgTDQ4LDggTDU2LDggTDU2LDE2IEw2NCwxNiBMNjQsMjQgTDcyLDI0IEw3MiwzMiBMODAsMzIgTDgwLDQ4IEw3Miw0OCBMNzIsNDAgTDY0LDQwIEw2NCw0OCBMNTYsNDggTDU2LDU2IEw0OCw1NiBMNDgsNDggTDMyLDQ4IEwzMiw1NiBMMjQsNTYgTDI0LDQ4IEwxNiw0OCBMMTYsNDAgTDgsNDAgTDgsNDggTDAsNDggTDAsMzIgTDgsMzIgTDgsMjQgTDE2LDI0IEwxNiwxNiBMMjQsMTYgTDI0LDggTDMyLDggTDMyLDE2IFogTTI0LDMyIEwzMiwzMiBMMzIsMjQgTDI0LDI0IEwyNCwzMiBaIE0xNiwwIEwyNCwwIEwyNCw4IEwxNiw4IEwxNiwwIFogTTE2LDU2IEwyNCw1NiBMMjQsNjQgTDE2LDY0IEwxNiw1NiBaIE01NiwzMiBMNTYsMjQgTDQ4LDI0IEw0OCwzMiBMNTYsMzIgWiBNNjQsMCBMNjQsOCBMNTYsOCBMNTYsMCBMNjQsMCBaIE02NCw1NiBMNjQsNjQgTDU2LDY0IEw1Niw1NiBMNjQsNTYgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==") no-repeat center; }
 
 .theme_color_project-warning, .warning {
-  --color-default: #ff3333;
+  --color-default: blue;
   --color-accent: #FFFFFF;
-  --color-border: #ff3333;
+  --color-border: blue;
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.6);
   --text-extra: rgba(255, 255, 255, 0.3);
-  --text-link: #FFF; }
+  --text-link: #FFF;
+  --image: var(--color-default) url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nODBweCcgaGVpZ2h0PSc2NHB4JyB2aWV3Qm94PScwIDAgODAgNjQnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayc+CiAgICA8ZyBpZD0nUGFnZS0xJyBzdHJva2U9J25vbmUnIHN0cm9rZS13aWR0aD0nMScgZmlsbD0nbm9uZScgZmlsbC1ydWxlPSdldmVub2RkJz4KICAgICAgICA8ZyBpZD0naW1hZ2UtcGxhY2Vob2xkZXInIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC01MDAuMDAwMDAwLCAtMzY4LjAwMDAwMCknIGZpbGw9JyMwMDAwMDAnIGZpbGwtcnVsZT0nbm9uemVybyc+CiAgICAgICAgICAgIDxnIGlkPSdHcm91cCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTAwLjAwMDAwMCwgMzY4LjAwMDAwMCknPgogICAgICAgICAgICAgICAgPGcgaWQ9J3BsYWNlaG9sZGVyJz4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSdNMzIsMTYgTDQ4LDE2IEw0OCw4IEw1Niw4IEw1NiwxNiBMNjQsMTYgTDY0LDI0IEw3MiwyNCBMNzIsMzIgTDgwLDMyIEw4MCw0OCBMNzIsNDggTDcyLDQwIEw2NCw0MCBMNjQsNDggTDU2LDQ4IEw1Niw1NiBMNDgsNTYgTDQ4LDQ4IEwzMiw0OCBMMzIsNTYgTDI0LDU2IEwyNCw0OCBMMTYsNDggTDE2LDQwIEw4LDQwIEw4LDQ4IEwwLDQ4IEwwLDMyIEw4LDMyIEw4LDI0IEwxNiwyNCBMMTYsMTYgTDI0LDE2IEwyNCw4IEwzMiw4IEwzMiwxNiBaIE0yNCwzMiBMMzIsMzIgTDMyLDI0IEwyNCwyNCBMMjQsMzIgWiBNMTYsMCBMMjQsMCBMMjQsOCBMMTYsOCBMMTYsMCBaIE0xNiw1NiBMMjQsNTYgTDI0LDY0IEwxNiw2NCBMMTYsNTYgWiBNNTYsMzIgTDU2LDI0IEw0OCwyNCBMNDgsMzIgTDU2LDMyIFogTTY0LDAgTDY0LDggTDU2LDggTDU2LDAgTDY0LDAgWiBNNjQsNTYgTDY0LDY0IEw1Niw2NCBMNTYsNTYgTDY0LDU2IFonIGlkPSdTaGFwZSc+PC9wYXRoPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=") no-repeat center; }
 
 .theme_space_default {
   --space-xxxs: 3px;
@@ -310,7 +300,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     .form__item_space-v_m {
       padding-top: var(--space-m);
       padding-bottom: var(--space-m); }
-    .form__item_space-v_l, .payment__header, .payment__content, .payment__footer {
+    .form__item_space-v_l, .payment__header, .payment__footer {
       padding-top: var(--space-l);
       padding-bottom: var(--space-l); }
     .form__item_space-v_xl {
@@ -319,7 +309,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     .form__item_space-v_xxl {
       padding-top: var(--space-xxl);
       padding-bottom: var(--space-xxl); }
-    .form__item_space-v_xxxl {
+    .form__item_space-v_xxxl, .payment__content {
       padding-top: var(--space-xxxl);
       padding-bottom: var(--space-xxxl); }
     .form__item_space-v_xxxxl {
@@ -390,7 +380,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
       margin-bottom: var(--space-s); }
     .list__item_indent-b_m, .history__description {
       margin-bottom: var(--space-m); }
-    .list__item_indent-b_l, .history__actions {
+    .list__item_indent-b_l {
       margin-bottom: var(--space-l); }
     .list__item_indent-b_xl {
       margin-bottom: var(--space-xl); }
@@ -480,7 +470,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
 .image {
   width: 100%;
   height: 64px;
-  background: var(--color-default) var(--image-url) no-repeat center;
+  background: var(--image);
   border: 3px solid var(--color-border); }
 
 .input {
@@ -515,31 +505,36 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     --word-width-m: 48px;
     --word-width-l: 100px;
     --word-height: 8px;
-    --line-height: var(--line-height-s); }
+    --word-margin-top: calc((var(--line-height-s) - var(--font-size-s))*0.6);
+    --word-margin-bottom: calc((var(--line-height-s) - var(--font-size-s))*0.4); }
   .text_size_m {
     --word-width-s: 24px;
     --word-width-m: 56px;
     --word-width-l: 114px;
     --word-height: 10px;
-    --line-height: var(--line-height-m); }
+    --word-margin-top: calc((var(--line-height-m) - var(--font-size-m))*0.55);
+    --word-margin-bottom: calc((var(--line-height-m) - var(--font-size-m))*0.45); }
   .text_size_l {
     --word-width-s: 28px;
     --word-width-m: 68px;
     --word-width-l: 138px;
     --word-height: 11px;
-    --line-height: var(--line-height-l); }
+    --word-margin-top: calc((var(--line-height-l) - var(--font-size-l))*0.45);
+    --word-margin-bottom: calc((var(--line-height-l) - var(--font-size-l))*0.55); }
   .text_size_xl {
     --word-width-s: 32px;
     --word-width-m: 74px;
     --word-width-l: 154px;
     --word-height: 13px;
-    --line-height: var(--line-height-xl); }
+    --word-margin-top: calc((var(--line-height-xl) - var(--font-size-xl))*0.45);
+    --word-margin-bottom: calc((var(--line-height-xl) - var(--font-size-xl))*0.55); }
   .text_size_xxl {
     --word-width-s: 36px;
     --word-width-m: 88px;
     --word-width-l: 184px;
     --word-height: 16px;
-    --line-height: var(--line-height-xxl); }
+    --word-margin-top: calc((var(--line-height-xxl) - var(--font-size-xxl))*0.35);
+    --word-margin-bottom: calc((var(--line-height-xxl) - var(--font-size-xxl))*0.65); }
   .text_type_h1 {
     margin: 18px 0 24px; }
   .text_type_h2 {
@@ -559,8 +554,8 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   .text__word {
     background-color: var(--color);
     height: var(--word-height);
-    margin-top: calc(var(--line-height)/2);
-    margin-bottom: calc(var(--line-height)/2); }
+    margin-top: var(--word-margin-top);
+    margin-bottom: var(--word-margin-bottom); }
     .text__word_width_s {
       width: var(--word-width-s); }
     .text__word_width_m {
@@ -581,6 +576,8 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     align-items: center; }
     .warning__content .placeholder {
       margin: var(--space-m) 0; }
+  .warning__button-wrapper {
+    margin-top: 5px; }
 
 .product {
   min-height: 300px;
@@ -606,7 +603,7 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   .history__time {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; }
+    justify-content: center; }
   .history__info {
     flex: 1; }
 
@@ -633,13 +630,16 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   .event__speaker {
     margin-right: var(--space-xs);
     margin-bottom: var(--space-xxl); }
+  .event__description {
+    margin-top: var(--space-s); }
 
 .header {
   margin: var(--space-xxxl) auto;
   max-width: 1280px; }
   .header__content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .header__logo {
     width: 179px;
     height: 34px;

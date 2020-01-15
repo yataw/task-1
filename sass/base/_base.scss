@@ -27,15 +27,3 @@ html {
 body {
 
 }
-
-.dev_ {
-  position: absolute;
-  // TODO for test
-  background-image: url("../warning.png");
-  background-repeat: no-repeat;
-  z-index: -1;
-  width: 100%;
-  height: 50%;
-  opacity: .5;
-  bottom: 0;
-}
