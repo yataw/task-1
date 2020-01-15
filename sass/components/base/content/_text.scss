@@ -20,8 +20,8 @@
             --word-width-m: 56px;
             --word-width-l: 114px;
             --word-height: 10px;
-            --word-margin-top: calc((var(--line-height-m) - var(--font-size-m))*0.45);
-            --word-margin-bottom: calc((var(--line-height-m) - var(--font-size-m))*0.55);
+            --word-margin-top: calc((var(--line-height-m) - var(--font-size-m))*0.55);
+            --word-margin-bottom: calc((var(--line-height-m) - var(--font-size-m))*0.45);
         }
         &_l {
             --word-width-s: 28px;
