@@ -11,7 +11,7 @@
         --text-extra: rgba(0, 0, 0, 0.3);
         --text-link: #0077ff;
 
-        --image-url: url(../assets/images/image-placeholder-primary.svg);
+        --image: var(--color-default) #{$image-primary-base64url} no-repeat center;
     }
 
     &_project-brand {
@@ -24,7 +24,7 @@
         --text-extra: rgba(255, 255, 255, 0.3);
         --text-link: #FFFFFF;
 
-        --image-url: url(../assets/images/image-placeholder-inverse.svg);
+        --image: var(--color-default) #{$image-primary-base64url} no-repeat center;
     }
 
     &_project-inverse {
@@ -37,7 +37,7 @@
         --text-extra: rgba(255, 255, 255, 0.3);
         --text-link: #0077ff;
 
-        --image-url: url(../assets/images/image-placeholder-inverse.svg);
+        --image: var(--color-default) #{$image-inverse-base64url} no-repeat center;
     }
 
     &_project-warning {
@@ -49,5 +49,7 @@
         --text-secondary: rgba(255, 255, 255, 0.6);
         --text-extra: rgba(255, 255, 255, 0.3);
         --text-link: #FFF;
+
+        --image: var(--color-default) #{$image-primary-base64url} no-repeat center;
     }
 }
