@@ -631,13 +631,13 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
   margin: auto;
   max-width: 1280px; }
   .header__content {
-    margin: var(--space-xxxl) 0;
+    padding: var(--space-xxxl) 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     @media only screen and (max-width: 1280px) {
       .header__content {
-        margin: var(--space-xxxl) var(--gap); } }
+        padding: var(--space-xxxl) var(--gap); } }
   .header__logo {
     width: 179px;
     height: 34px;
