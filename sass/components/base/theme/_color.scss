@@ -24,7 +24,7 @@
         --text-extra: rgba(255, 255, 255, 0.3);
         --text-link: #FFFFFF;
 
-        --image: var(--color-default) #{$image-primary-base64url} no-repeat center;
+        --image: var(--color-default) #{$image-inverse-base64url} no-repeat center;
     }
 
     &_project-inverse {

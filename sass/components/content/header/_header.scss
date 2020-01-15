@@ -1,21 +1,22 @@
 
 .header {
-    padding: var(--space-xxxl) auto;
+    margin: auto;
     max-width: 1280px;
 
     &__content {
+        margin: var(--space-xxxl) 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (max-width: 1280px) {
+            margin: var(--space-xxxl) var(--gap);
+        }
     }
     &__logo {
         width: 179px;
         height: 34px;
         background-color: var(--text-primary);
-    }
-
-    @media only screen and (max-width: 1280px) {
-        padding: var(--space-xxxl) var(--gap);
     }
 }
 
