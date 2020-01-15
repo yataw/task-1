@@ -30,7 +30,7 @@
         @extend .list__item, .list__item_indent-b_m;
     }
     &__actions {
-        @extend .list__item, .list__item_distribute_between, .list__item_indent-b_l;
+        @extend .list__item, .list__item_distribute_between;
     }
 
     &__details {
