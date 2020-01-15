@@ -9,7 +9,7 @@
         // TODO тут что-то не так с отступами
 
         flex-direction: column;
-        @extend .form__item, .form__item_space-v_l, .form__item_space-h_xl, .form__item_border_bottom;
+        @extend .form__item, .form__item_space-v_xxxl, .form__item_space-h_xl, .form__item_border_bottom;
     }
 
     &__footer {
