@@ -1,6 +1,6 @@
 
 .header {
-    margin: var(--space-xxxl) auto;
+    padding: var(--space-xxxl) auto;
     max-width: 1280px;
 
     &__content {
@@ -15,7 +15,7 @@
     }
 
     @media only screen and (max-width: 1280px) {
-        margin: var(--space-xxxl) var(--gap);
+        padding: var(--space-xxxl) var(--gap);
     }
 }
 
