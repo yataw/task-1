@@ -14,8 +14,6 @@
     }
     &__image {
         width: 100%;
-        // TODO theme_color_project-inverse или theme_color_project-default
-        @extend .theme_color_project-inverse;
 
         .image {
             height: 160px;
