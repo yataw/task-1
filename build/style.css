@@ -128,28 +128,24 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     .theme_gap_small {
       --gap: var(--space-s); } }
 
-.layout__container_align_center {
-  margin: auto; }
-
-.layout__container_size_s {
-  max-width: 920px; }
-
-.layout__container_size_m {
-  max-width: 1280px; }
-
-.layout__container_space-v_xxxxl {
-  padding-top: var(--space-xxxxl);
-  padding-bottom: var(--space-xxxxl); }
-
-.layout__container_space-v_xxxxxl {
-  padding-top: var(--space-xxxxxl);
-  padding-bottom: var(--space-xxxxxl); }
-
-.layout__container_indent-b_xxl {
-  margin-bottom: var(--space-xxl); }
-
-.layout__container_indent-b_xxxxl {
-  margin-bottom: var(--space-xxxxl); }
+.layout__container {
+  background-color: var(--color-default); }
+  .layout__container_align_center {
+    margin: auto; }
+  .layout__container_size_s {
+    max-width: 920px; }
+  .layout__container_size_m {
+    max-width: 1280px; }
+  .layout__container_space-v_xxxxl {
+    padding-top: var(--space-xxxxl);
+    padding-bottom: var(--space-xxxxl); }
+  .layout__container_space-v_xxxxxl {
+    padding-top: var(--space-xxxxxl);
+    padding-bottom: var(--space-xxxxxl); }
+  .layout__container_indent-b_xxl {
+    margin-bottom: var(--space-xxl); }
+  .layout__container_indent-b_xxxxl {
+    margin-bottom: var(--space-xxxxl); }
 
 .grid {
   display: grid; }
@@ -342,7 +338,8 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     /** block */ }
 
 .informer, .warning {
-  /* informer */ }
+  position: relative;
+  height: 100%; }
   .informer_border_all, .warning {
     border: 3px solid var(--color-border); }
   .informer_view_default, .warning {
@@ -359,6 +356,10 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
       padding: var(--space-xl); }
     .informer__content_space-a_xxl, .warning__content, .informer__action_space-a_xxl {
       padding: var(--space-xxl); }
+  .informer__action, .warning__button-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
 
 .list, .history, .history__transaction {
   display: flex;
@@ -580,8 +581,6 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
     align-items: center; }
     .warning__content .placeholder {
       margin: var(--space-m) 0; }
-  .warning__button-wrapper {
-    margin-top: 5px; }
 
 .product {
   min-height: 300px;

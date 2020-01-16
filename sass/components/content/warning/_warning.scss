@@ -15,9 +15,5 @@
 
     &__button-wrapper {
         @extend .informer__action, .informer__action_distribute_center, .informer__action_space-a_xl;
-        //margin-top: var(--space-xxs);
-        // TODO Разрабраться, почему здесь съехал марджин (в нем ли дело?)
-        margin-top: 5px;
-
     }
 }
