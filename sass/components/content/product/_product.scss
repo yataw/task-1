@@ -5,6 +5,9 @@
 
     @extend .card, .card_view_default, .card_border_all;
 
+    &__title {
+        margin-bottom: var(--space-xxxl);
+    }
     &__content {
         @extend .card__content, .card__content_space-a_m;
     }

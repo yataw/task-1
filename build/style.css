@@ -585,6 +585,8 @@ OEDER: Base + typegraphy > general layout _ grid > page layout > components
 .product {
   min-height: 300px;
   border: 3px solid var(--color-border); }
+  .product__title {
+    margin-bottom: var(--space-xxxl); }
   .product__footer {
     flex-direction: column; }
   .product__image {
