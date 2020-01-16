@@ -50,9 +50,9 @@
                 grid-column: span 8;
             }
         }
-    }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: repeat(1, 1fr);
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1/-1;
+        }
     }
 }
