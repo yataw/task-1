@@ -1,9 +1,9 @@
 
 // RESPONSIVE BREAKPOINTS
-$bp-large: 1200px;
 $bp-medium: 1024px; // screen-m
-$bp-small: 600px;
 
+
+// CONTAINER SIZES
 $container-size-s: 920px;
 $container-size-m: 1280px;
 
@@ -15,13 +15,13 @@ $image-inverse-base64url: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODBweCI
 
 // PRESETS
 *, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
